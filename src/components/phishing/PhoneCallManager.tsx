@@ -99,7 +99,7 @@ export default function PhoneCallManager({
   }
 
   useEffect(() => {
-    const a = new Audio("./audio/default-ringtone.mp3");
+    const a = new Audio("./phishing/audio/default-ringtone.mp3");
     a.loop = false;
     a.preload = "auto";
     a.volume = 1.0;
