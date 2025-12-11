@@ -10,4 +10,8 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/Phantom_Build/',
+  build: {
+    outDir: 'dist',
+  },
 })
