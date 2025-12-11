@@ -22,7 +22,7 @@ export const newsMeta: NewsMetaItem[] = [
         size: 200,
         label: "Different quality for second half logo",
       },
-      { x: 76, y: 90, size: 65, label: "Use of capitalized text" },
+      { x: 22, y: 91, size: 70, label: "Use of capitalized text" },
     ],
     reason:
       "Inconsistent branding quality and sensationalized capitalization indicate a fabricated post from an unreliable source.",
