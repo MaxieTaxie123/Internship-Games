@@ -46,9 +46,6 @@ export default function OutlookGame() {
     if (correct) {
       // reward only if player is still active
       setJudgedCorrect((prev) => ({ ...prev, [`call_${Date.now()}`]: true }));
-    } else {
-      // optionally, minor penalty (or none)
-      console.warn("❌ Wrong call decision — no score awarded");
     }
   }
 

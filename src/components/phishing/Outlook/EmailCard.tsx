@@ -18,7 +18,7 @@ function initials(sender: string) {
   return (first + second).toUpperCase();
 }
 
-// ✅ Helper: format like "Sat 14:48"
+// Helper: format like "Sat 14:48"
 function formattedDateTime(date: Date): string {
   const day = date.toLocaleDateString("en-US", { weekday: "short" });
   const time = date.toLocaleTimeString("en-GB", {

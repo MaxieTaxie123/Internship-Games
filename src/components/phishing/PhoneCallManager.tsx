@@ -214,7 +214,7 @@ export default function PhoneCallManager({
             </div>
 
             <div className="relative min-w-0">
-              {/* Number (use anything you have; here we render the caller label bold) */}
+              {/* Phone Number */}
               <div className="flex justify-center text-zinc-100 font-semibold text-lg leading-tight mx-auto">
                 {currentCall.number ?? "(715) 252-••••"}
               </div>

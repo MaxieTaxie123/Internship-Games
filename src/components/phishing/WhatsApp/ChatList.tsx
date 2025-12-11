@@ -9,7 +9,7 @@ interface ChatListProps {
 }
 
 export default function ChatList({ chats, selectedId, onSelect, judgedChats }: ChatListProps) {
-  // ✅ Sort chats ascending by the last message time
+  // Sort chats ascending by the last message time
   const sortedChats = [...chats].sort((b, a) => {
     const aMsg = a.messages[a.messages.length - 1];
     const bMsg = b.messages[b.messages.length - 1];
@@ -26,7 +26,7 @@ export default function ChatList({ chats, selectedId, onSelect, judgedChats }: C
         const judged = judgedChats[chat.id];
         const isSelected = selectedId === chat.id;
 
-        // ✅ Safely grab the last message
+        // Safely grab the last message
         const lastMsg = chat.messages[chat.messages.length - 1];
         const previewText = lastMsg?.text ?? "";
         const time = lastMsg?.time ?? "";
@@ -65,7 +65,7 @@ export default function ChatList({ chats, selectedId, onSelect, judgedChats }: C
   );
 }
 
-// ✅ Helper: Convert a time string into a comparable number
+// Helper: Convert a time string into a comparable number
 function extractNumericTime(timeStr: string): number {
   // Matches something like "11:42", "09:15", etc.
   const match = timeStr.match(/(\d{1,2}):(\d{2})/);

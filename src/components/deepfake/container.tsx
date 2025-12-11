@@ -78,7 +78,7 @@ const Test: React.FC<ContainerProps> = ({ onFinished }) => {
     });
 
     // After cards are flipped to the back (at 25% of animation),
-    // update to the next image pair. If we've reached the last pair,
+    // update to the next image pair.
     const flipToBackTime = ANIMATION_DURATION * FLIP_TO_BACK_FRACTION;
     window.setTimeout(() => {
       const next = pairIndex + 1;
@@ -113,7 +113,7 @@ const Test: React.FC<ContainerProps> = ({ onFinished }) => {
     if (showFeedback) return; // ignore clicks when feedback is open
     const meta = deepfakeMeta[pairIndex];
 
-    // If we don't have meta for this pair, just show a generic message
+    // If there's no meta for this pair, just show a generic message
     if (!meta) {
       setFeedbackTitle("Deepfake clue");
       setFeedbackMessage(

@@ -33,11 +33,11 @@ export default function ReadingPane({
 }: ReadingPaneProps) {
   const [hasJudged, setHasJudged] = useState(false);
   const [showTypeModal, setShowTypeModal] = useState(false);
-  const [isJudging, setIsJudging] = useState(false); // optional: blocks double clicks
+  const [isJudging, setIsJudging] = useState(false);
   // Track judged email ids so they cannot be re-graded when navigating
   const judgedIdsRef = useRef<Set<number>>(new Set());
 
-  // ✅ Reset local UI state whenever the user switches to a different email
+  // Reset local UI state whenever the user switches to a different email
   useEffect(() => {
     // Set local UI state according to whether this email has been judged before
     setHasJudged(judgedIdsRef.current.has(selected.id));

@@ -1,4 +1,3 @@
-// src/components/common/PhishTypeModal.tsx
 import { useEffect, useRef, useState } from "react";
 import { PHISH_TYPES, type PhishTypeKey } from "../../data/phishTypes";
 import { X } from "lucide-react";

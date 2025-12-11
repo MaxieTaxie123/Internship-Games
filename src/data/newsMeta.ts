@@ -7,7 +7,6 @@ export type NewsHotspot = {
 
 export type NewsMetaItem = {
   hotspots?: NewsHotspot[];
-  /** Summary reason explaining why the card is fake (only for false articles) */
   reason?: string;
 };
 

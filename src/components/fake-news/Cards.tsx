@@ -22,7 +22,7 @@ type CardsProps = {
   onSwipeLeft?: () => void;
   onSwipeRight?: () => void;
   onFinished?: () => void; // called when stack empties and UI is deloaded
-  onScoreChange?: (score: number) => void; // optional score callback
+  onScoreChange?: (score: number) => void;
 };
 
 export type CardsHandle = {
@@ -152,7 +152,7 @@ const Cards = React.forwardRef<CardsHandle, CardsProps>(function Cards(
           transform: `translate(-50%, -50%) translateX(${translateWrong}) rotate(${rotateWrong}deg)`,
           transition: "transform 1000ms ease",
         });
-        // no score change on incorrect (or add penalty if desired)
+        // no score change on incorrect
         return;
       }
       // correct classification: +1 score
@@ -223,7 +223,6 @@ const Cards = React.forwardRef<CardsHandle, CardsProps>(function Cards(
       transform: `translateX(${dx.current}px) rotate(${angle}deg)`,
     });
 
-    // Edge glow: use distance to drive opacity
     const intensity = Math.min(Math.abs(dx.current) / 160, 1); // 0..1
     if (dx.current > 0) {
       setRightGlowOpacity(intensity);
@@ -276,7 +275,6 @@ const Cards = React.forwardRef<CardsHandle, CardsProps>(function Cards(
       </div>
       {stack.length > 0 && (
         <>
-          {/* Screen edge glows */}
           <div
             aria-hidden
             className="pointer-events-none absolute left-0 top-0 h-screen w-24 m-0"
