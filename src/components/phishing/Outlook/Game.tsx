@@ -63,7 +63,7 @@ export default function OutlookGame() {
       <Toolbar />
 
       {/* Main layout */}
-      <div className="grid grid-cols-[260px_360px_1fr] h-full gap-1">
+      <div className="grid grid-cols-[260px_360px_1fr] h-full min-h-0 gap-1">
         <Sidebar
           doneCount={doneCount}
           progressPct={progressPct}

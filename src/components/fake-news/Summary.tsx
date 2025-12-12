@@ -95,7 +95,7 @@ const Summary: React.FC<SummaryProps> = ({ onBack }) => {
                          bg-black/40 text-red-300 hover:bg-red-500/10 hover:text-red-100
                          hover:shadow-[0_0_25px_rgba(248,113,113,0.7)] transition"
         >
-          Back to explanation
+          {__`Back to Explanation`}
         </button>
       )}
     </section>

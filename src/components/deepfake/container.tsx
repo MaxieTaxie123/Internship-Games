@@ -209,12 +209,11 @@ const Test: React.FC<ContainerProps> = ({ onFinished }) => {
               {/* Top label + title block */}
               <div className="flex flex-col items-center gap-4 p-5">
                 <h2 className="px-6 py-2 rounded-full border border-red-500 tracking-[0.25em] uppercase font-bold bg-black/20 text-red-500 shadow-[0_0_25px_rgba(0,0,0,0.6)] font-sharetech">
-                  Which one is the deepfake?
+                  {__`deepfake.title`}
                 </h2>
 
                 <p className="text-xs md:text-sm text-slate-300 max-w-xl text-center tracking-[0.12em] uppercase font-sharetech">
-                  Study the faces carefully and pick the image that looks
-                  artificially generated.
+                  {__`deepfake.title.description`}
                 </p>
                 <StreakTimer secondsLeft={secondsLeft} streak={streak} />
               </div>

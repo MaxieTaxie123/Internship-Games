@@ -62,7 +62,7 @@ export default function WhatsAppGame() {
         <div className="p-3 border-b border-[#2a3942]">
           <input
             type="text"
-            placeholder="Search or start a new chat"
+            placeholder={__`phishing.search.chat`}
             className="w-full bg-[#202c33] text-[#8696a0] text-sm rounded-lg px-4 py-2 outline-none"
           />
         </div>

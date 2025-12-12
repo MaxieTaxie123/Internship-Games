@@ -13,7 +13,7 @@ const StreakTimer: React.FC<TimerProps> = ({ secondsLeft, streak }) => {
       <div className="flex gap-4">
         <span>Streak: {streak}</span>
         <span>
-          Time left:{" "}
+          {__`Time left`}:{" "}
           <span className={isCritical ? "text-red-400" : "text-slate-100"}>
             {Math.max(secondsLeft, 0)}s
           </span>

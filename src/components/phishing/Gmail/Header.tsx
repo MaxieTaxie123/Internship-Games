@@ -15,7 +15,7 @@ export default function GmailHeader() {
           <Search className="w-5 h-5 text-[#9aa0a6]" />
           <input
             type="text"
-            placeholder="Search mail"
+            placeholder={__`phishing.search.mail`}
             className="bg-transparent outline-none ml-3 text-sm text-white placeholder-[#9aa0a6] w-full"
           />
         </div>

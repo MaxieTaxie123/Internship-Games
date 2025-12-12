@@ -187,7 +187,7 @@ export default function PhishTypeModal({
             onClick={handleClose}
             className="px-3 py-1.5 rounded border border-[#2c2c2c] text-zinc-300 hover:bg-white/5"
           >
-            Cancel
+            {__`Cancel`}
           </button>
           <button
             type="submit"
@@ -195,7 +195,7 @@ export default function PhishTypeModal({
             data-no-drag
             className="px-3 py-1.5 rounded text-white bg-violet-600 hover:bg-violet-500"
           >
-            Confirm
+            {__`Confirm`}
           </button>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Tutorial: React.FC<TutorialProps> = ({ onStart }) => {
 
           <div className="space-y-3">
             <h1 className="text-2xl md:text-3xl font-bold text-red-500 font-sharetech tracking-[0.25em] uppercase">
-              How the game works
+              {__`How to Play`}
             </h1>
             <p className="text-sm md:text-base text-slate-200 font-sharetech leading-relaxed">
               Each round you will see <span className="font-semibold">two face images</span>. 
@@ -54,7 +54,7 @@ const Tutorial: React.FC<TutorialProps> = ({ onStart }) => {
           {/* FEEDBACK EXPLANATION */}
           <div className="space-y-3">
             <h2 className="text-sm md:text-base font-bold text-red-400 font-sharetech tracking-[0.25em] uppercase">
-              Feedback & explanations
+              {__`Feedback & Explanations`}
             </h2>
             <ul className="text-sm text-slate-300 font-sharetech space-y-2 list-disc list-inside">
               <li>

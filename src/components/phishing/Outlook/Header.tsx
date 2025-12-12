@@ -24,7 +24,7 @@ export default function Header() {
           <Search className="w-4 h-4 text-white/80" />
           <input
             type="text"
-            placeholder="Search"
+            placeholder={__`phishing.search.mail`}
             className="bg-transparent text-sm text-white placeholder-white/80 w-full outline-none border-none"
           />
         </div>

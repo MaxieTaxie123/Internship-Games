@@ -17,7 +17,7 @@ export default function EmailList({
   judgedCorrect,
 }: EmailListProps) {
   return (
-    <section className="overflow-auto p-2">
+    <section className="h-full min-h-0 overflow-y-auto p-2">
       {emails.map((email) => (
         <div key={email.id} className="group">
           <EmailCard

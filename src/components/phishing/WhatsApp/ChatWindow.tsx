@@ -120,7 +120,7 @@ export default function ChatWindow({
         <Paperclip className="w-5 h-5 text-[#8696a0] mr-2 hover:text-white" />
         <input
           type="text"
-          placeholder="Type a message..."
+          placeholder={__`phishing.type.message`}
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           className="flex-1 bg-[#202c33] text-[#e9edef] text-sm rounded-lg px-4 py-2 outline-none placeholder-[#8696a0]"
@@ -137,7 +137,7 @@ export default function ChatWindow({
                 : "bg-red-700/30 hover:bg-red-700/40 border-red-600/50 text-red-300"
             }`}
           >
-            <AlertTriangle className="w-4 h-4" /> Phishing
+            <AlertTriangle className="w-4 h-4" /> {__`phishing.mark.phishing`}
           </button>
 
           <button
@@ -149,7 +149,7 @@ export default function ChatWindow({
                 : "bg-green-700/30 hover:bg-green-700/40 border-green-600/50 text-green-300"
             }`}
           >
-            <Check className="w-4 h-4" /> Legit
+            <Check className="w-4 h-4" /> {__`phishing.mark.legit`}
           </button>
         </div>
       </div>
@@ -159,7 +159,7 @@ export default function ChatWindow({
         open={showTypeModal}
         onClose={() => setShowTypeModal(false)}
         onSubmit={submitType}
-        title="Which type of phishing is this chat?"
+        title={__`phishing.modal.title`}
       />
     </div>
   );

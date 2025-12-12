@@ -28,7 +28,7 @@ const Feedback: React.FC<FeedbackPopupProps> = ({
         <div className="bg-linear-to-b from-[#4c0409] via-[#31130f] to-[#101011] px-6 text-white p-2 h-full">
           <div className="flex flex-col items-center">
             <h2 className="text-2xl/6 font-extrabold">
-              {title ?? "It's a Mismatch"}
+              {title ?? __`fakenews.mismatched`}
             </h2>
             {article && (
               <div className="size-full rounded-md border border-white/30 shadow-md">
@@ -43,7 +43,7 @@ const Feedback: React.FC<FeedbackPopupProps> = ({
               className="mt-2 px-4 py-1 rounded-full bg-white text-red-900 font-semibold shadow transition hover:bg-red-900 hover:text-white cursor-pointer"
               onClick={onClose}
             >
-              Continue
+              {__`Continue`}
             </button>
           </div>
         </div>

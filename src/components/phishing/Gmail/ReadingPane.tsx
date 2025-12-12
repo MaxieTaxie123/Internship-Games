@@ -39,15 +39,15 @@ export default function GmailReadingPane({
   if (gameOver) {
     return (
       <section className="overflow-auto h-full flex flex-col items-center justify-center gap-3 bg-gray-800/70">
-        <div className="text-3xl font-bold">Game over!</div>
+        <div className="text-3xl font-bold">{__`Game Over`}</div>
         <div className="text-lg">
-          Score: <span className="font-semibold">{score}</span>
+          {__`Score`}: <span className="font-semibold">{score}</span>
         </div>
         <button
           className="mt-2 rounded-lg bg-violet-600 hover:bg-violet-500 px-4 py-2 cursor-pointer"
           onClick={() => location.reload()}
         >
-          Play Again
+          {__`Play Again`}
         </button>
       </section>
     );
@@ -118,13 +118,13 @@ export default function GmailReadingPane({
               onClick={handlePhish}
               className="flex items-center gap-2 border border-red-700 text-red-400 px-3 py-1.5 rounded-md hover:bg-red-900/30"
             >
-              <AlertTriangle className="w-4 h-4" /> Mark as Phishing
+              <AlertTriangle className="w-4 h-4" /> {__`phishing.mark.phishing`}
             </button>
             <button
               onClick={handleLegit}
               className="flex items-center gap-2 border border-green-700 text-green-400 px-3 py-1.5 rounded-md hover:bg-green-900/30"
             >
-              <Check className="w-4 h-4" /> Mark as Legit
+              <Check className="w-4 h-4" /> {__`phishing.mark.legit`}
             </button>
           </>
           ) : (

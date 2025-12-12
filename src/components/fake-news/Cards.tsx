@@ -135,7 +135,7 @@ const Cards = React.forwardRef<CardsHandle, CardsProps>(function Cards(
       const correct = playerThinksTrue === isTrue;
 
       if (!correct) {
-        setFeedbackTitle("It's a Mismatch");
+        setFeedbackTitle(__`fakenews.mismatched`);
         setFeedbackMessage(
           `This post is ${isTrue ? "REAL" : "FAKE"}. ${
             isTrue
@@ -271,7 +271,7 @@ const Cards = React.forwardRef<CardsHandle, CardsProps>(function Cards(
     >
       {/* Score badge */}
       <div className="absolute top-4 right-4 z-50 rounded-full border border-red-500/70 bg-black/60 px-4 py-1.5 text-[0.8rem] uppercase tracking-[0.2em] text-red-300 font-sharetech shadow">
-        Score: {score}
+        {__`Score`}: {score}
       </div>
       {stack.length > 0 && (
         <>

@@ -38,7 +38,7 @@ const Summary: React.FC<SummaryProps> = ({ onBack }) => {
               </p>
             </div>
             <h1 className="text-xl md:text-2xl font-bold text-red-500 font-sharetech tracking-[0.25em] uppercase">
-              Deepfake summary & explanations
+              {__`fakenews.summaryvisual`}
             </h1>
             <p className="text-xs md:text-sm text-slate-300 font-sharetech max-w-2xl">
               Below is an overview of all image pairs used in this training. For
@@ -69,7 +69,7 @@ const Summary: React.FC<SummaryProps> = ({ onBack }) => {
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <span className="inline-flex items-center justify-center rounded-full border border-red-500/70 bg-black/60 px-4 py-1.5 text-[1.5rem] uppercase tracking-[0.2em] text-red-300 font-sharetech mb-2">
-                      Pair {index + 1}
+                      {__`deepfake.pair`} {index + 1}
                     </span>
                   </div>
                 </div>
@@ -176,7 +176,7 @@ const Summary: React.FC<SummaryProps> = ({ onBack }) => {
               onClick={closeOverlay}
               className="absolute right-3 top-3 z-50 rounded-full bg-black/70 px-2 py-1 text-[0.7rem] uppercase tracking-[0.18em] text-slate-200 font-sharetech border border-red-500/70 hover:bg-red-500 hover:text-black transition"
             >
-              Close
+              {__`Close`}
             </button>
 
             <div className="relative w-full h-full">
@@ -209,7 +209,7 @@ const Summary: React.FC<SummaryProps> = ({ onBack }) => {
                          bg-black/40 text-red-300 hover:bg-red-500/10 hover:text-red-100
                          hover:shadow-[0_0_25px_rgba(248,113,113,0.7)] transition"
         >
-          Back to explanation
+          {__`Back to Explanation`}
         </button>
       )}
     </section>

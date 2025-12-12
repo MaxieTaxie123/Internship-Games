@@ -23,16 +23,16 @@ export default function Toolbar() {
 
       {/* Action buttons */}
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Trash2 size={15} /> Delete
+        <Trash2 size={15} /> {__`phishing.deleted`}
       </button>
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Archive size={15} /> Archive
+        <Archive size={15} /> {__`phishing.archive`}
       </button>
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Shield size={15} /> Report
+        <Shield size={15} /> {__`phishing.report`}
       </button>
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Folder size={15} /> Move to
+        <Folder size={15} /> {__`phishing.moveTo`}
       </button>
 
       {/* Divider */}
@@ -40,25 +40,25 @@ export default function Toolbar() {
 
       {/* Reply section */}
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Reply size={15} /> Reply
+        <Reply size={15} /> {__`phishing.reply`}
       </button>
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Forward size={15} /> Forward
-      </button>
-
-      <div className="w-px h-5 bg-zinc-700 mx-2" />
-
-      <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Zap size={15} className="text-yellow-400" /> Quick steps
+        <Forward size={15} /> {__`phishing.forward`}
       </button>
 
       <div className="w-px h-5 bg-zinc-700 mx-2" />
 
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Clock size={15} /> Later
+        <Zap size={15} className="text-yellow-400" /> {__`phishing.quickSteps`}
+      </button>
+
+      <div className="w-px h-5 bg-zinc-700 mx-2" />
+
+      <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
+        <Clock size={15} /> {__`phishing.later`}
       </button>
       <button className="flex items-center gap-1 opacity-80 hover:opacity-100">
-        <Printer size={15} /> Print
+        <Printer size={15} /> {__`phishing.print`}
       </button>
 
       {/* Spacer + More menu */}

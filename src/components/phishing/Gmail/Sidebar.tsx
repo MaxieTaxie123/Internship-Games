@@ -8,19 +8,19 @@ interface SidebarProps {
 
 export default function Sidebar({ doneCount, progressPct, score }: SidebarProps) {
   const folders = [
-    { icon: <Inbox className="w-4 h-4" />, label: "Inbox", count: "4,792" },
-    { icon: <Star className="w-4 h-4" />, label: "Starred" },
-    { icon: <Send className="w-4 h-4" />, label: "Sent" },
-    { icon: <FileText className="w-4 h-4" />, label: "Drafts" },
-    { icon: <ShoppingBag className="w-4 h-4" />, label: "Purchases" },
+    { icon: <Inbox className="w-4 h-4" />, label: __`phishing.inbox`, count: "4,792" },
+    { icon: <Star className="w-4 h-4" />, label: __`phishing.starred` },
+    { icon: <Send className="w-4 h-4" />, label: __`phishing.sent` },
+    { icon: <FileText className="w-4 h-4" />, label: __`phishing.drafts` },
+    { icon: <ShoppingBag className="w-4 h-4" />, label: __`phishing.purchases` },
   ];
 
-  const labels = ["Notes", "Unwanted"];
+  const labels = [__`phishing.notes`, __`phishing.unwanted`];
 
   return (
     <aside className="h-full p-3 flex flex-col text-sm">
       <button className="bg-[#c2e7ff] text-[#001d35] rounded-3xl px-4 py-2 font-semibold mb-4 flex items-center gap-2">
-        <Pen className="w-4 h-4" /> Compose
+        <Pen className="w-4 h-4" /> {__`phishing.compose`}
       </button>
 
       <nav className="space-y-1 mb-6">
@@ -37,7 +37,7 @@ export default function Sidebar({ doneCount, progressPct, score }: SidebarProps)
           </div>
         ))}
         <div className="flex items-center gap-3 text-[#9aa0a6] px-3 py-2 hover:bg-[#2c2c2c]/60 cursor-pointer rounded-lg">
-          <ChevronDown className="w-4 h-4" /> <span>More</span>
+          <ChevronDown className="w-4 h-4" /> <span>{__`phishing.more`}</span>
         </div>
       </nav>
 
@@ -52,15 +52,15 @@ export default function Sidebar({ doneCount, progressPct, score }: SidebarProps)
       ))}
 
       <div className="p-3 rounded-2xl bg-zinc-800/50 border border-zinc-700 mt-auto">
-        <div className="text-sm font-semibold mb-1">Game status</div>
+        <div className="text-sm font-semibold mb-1">{__`phishing.status`}</div>
         <div className="text-xs text-zinc-400 mb-2">
-          {doneCount} checked
+          {doneCount} {__`phishing.checked`}
         </div>
         <div className="h-2 rounded-full bg-zinc-700 overflow-hidden">
           <div className="h-2 bg-emerald-500" style={{ width: `${progressPct}%` }} />
         </div>
         <div className="mt-2 text-sm">
-          Score: <span className="font-semibold">{score}</span>
+          {__`Score`}: <span className="font-semibold">{score}</span>
         </div>
       </div>
 

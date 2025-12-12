@@ -54,7 +54,7 @@ const FeedbackPopup: React.FC<FeedbackPopupProps> = ({
             className="px-4 py-1 rounded-full border border-red-500 text-[0.7rem] uppercase tracking-[0.18em]
                        text-slate-200 hover:bg-red-500/10 hover:text-red-300 transition"
           >
-            Next
+            {__`Next`}
           </button>
         </div>
       </div>
