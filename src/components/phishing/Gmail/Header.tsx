@@ -6,7 +6,7 @@ export default function GmailHeader() {
       {/* Gmail logo */}
       <div className="flex items-center gap-2">
         <TextAlignJustify size={20} />
-        <span className="text-white text-2xl">Pmail</span>
+        <span className="text-white text-2xl">PhantomMail</span>
       </div>
 
       {/* Search bar */}

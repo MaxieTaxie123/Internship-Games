@@ -12,7 +12,7 @@ const Tutorial: React.FC<TutorialProps> = ({ onStart }) => {
 		>
 			<div className="w-full max-w-3xl bg-[#050610]/85 rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.7)] border border-red-900/60 p-6 md:p-8 space-y-6">
 				<div className="text-center space-y-2">
-					<p className="text-[0.55rem] tracking-[0.35em] uppercase text-red-400 font-sharetech">Phantom's Lab — Truth Finder</p>
+					<p className="text-[0.55rem] tracking-[0.35em] uppercase text-red-400 font-sharetech">Truth Finder</p>
 					<h1 className="text-2xl md:text-3xl font-bold text-red-500 font-sharetech tracking-[0.25em] uppercase">{__`How to Play`}</h1>
 				</div>
 

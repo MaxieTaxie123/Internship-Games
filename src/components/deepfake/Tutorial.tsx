@@ -19,7 +19,7 @@ const Tutorial: React.FC<TutorialProps> = ({ onStart }) => {
         <div className="flex flex-col gap-6">
           <div className="rounded-full border border-red-500/60 bg-black/40 px-5 py-1 inline-flex">
             <p className="text-[0.55rem] tracking-[0.35em] uppercase text-red-400 font-sharetech">
-              Phantom's Lab — Deepfake Detector
+              Deepfake Detector
             </p>
           </div>
 

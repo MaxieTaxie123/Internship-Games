@@ -83,7 +83,7 @@ export default function TutorialPage({ onStart }: TutorialPageProps) {
           </div>
 
           <h1 className="mt-4 flex items-center justify-center gap-3 text-3xl sm:text-4xl lg:text-5xl font-eurostile uppercase tracking-wide text-[#e30613]">
-            Phantom’s Lab
+            Phishing Detective
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-sm sm:text-base lg:text-lg leading-snug text-gray-300">
             The new generation of{" "}

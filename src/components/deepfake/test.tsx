@@ -271,7 +271,7 @@ const Test: React.FC<ContainerProps> = ({ onFinished }) => {
                         <img
                           className="flex scale-105 justify-center items-center"
                           src="./logo-icon.png"
-                          alt="Phantom's Lab"
+                          alt="Deepfake Detector"
                         />
                       </div>
                     </div>
